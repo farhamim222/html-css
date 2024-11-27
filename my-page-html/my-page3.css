@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+    background-color: #fae5ed; /* Soft lavender */
+
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Restrict body width */
+    margin: 0 auto; /* Center the content */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b9e6f8; /* Soft turquoise */
+    padding: 1em 2em;
+    width: 100%;
+    box-shadow:  2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    background-color: #df8992;
+    width: 20%; /* Slightly wider */
+    color: #0e0d0d;
+    padding: 0.5em;
+    border-radius: 10px; /* Rounded edges for a smoother look */
+}
+
+header nav {
+    text-align: right;
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li h3 {
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    border: solid 3px #f1949f; /* Slate blue border color */
+    border-radius: 40px;
+    color: #111212; /* Deep plum text color */
+    padding: 0.5em 1em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    background-color: #e2a8e4; /* Light mauve for hover effect */
+    border-color: #e597e8;
+    color: #090909;
+}
+
+header ul li a:active {
+    background-color: #f7f8f6; /* Soft teal for active state */
+}
+
+h2 {
+    text-align: center;
+    color: #121111; /* Dark navy */
+    margin: 2em 0 1em;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Card shadow */
+}
+
+/* Contact info styling (Left Side) */
+.contact-info {
+    width: 45%; /* Adjust the width to allow space for the map */
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Map placeholder styling (Right Side) */
+.contact-map {
+    width: 45%; /* Adjust the width of the map */
+}
+
+.map-placeholder {
+    background-color: #ddd;
+    height: 400px; /* Make sure the height is sufficient */
+    width: 100%; /* Full width inside the container */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map-placeholder p {
+    color: #666;
+    font-size: 1.5em;
+}

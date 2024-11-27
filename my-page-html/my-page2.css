@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+     background-color: #fae5ed; /* Soft lavender */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Restrict body width */
+    margin: 0 auto; /* Center the content */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39aa4; /* Soft turquoise */
+    width: 100%;
+    padding: 1em 3em;
+}
+
+header h1 {
+    text-align: center;
+    background-color: #91eff4;
+    width: 20%;
+    color: #0e0d0d;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 1.8em;
+}
+
+header nav {
+    width: auto;
+    text-align: right;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    border: solid 3px #f1949f;
+    border-radius: 40px;
+    color: #111212;
+    padding: 0.3em 1em;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: #e2a8e4;
+    border-color: #e597e8;
+    color: #090909;
+}
+
+header ul li a:active {
+    background-color: #f7f8f6;
+    padding: 0.2em;
+}
+
+h2 {
+    text-align: center;
+    color: #121111;
+}
+
+/* Product Section */
+.products-container {
+    display: flex;
+    justify-content: space-between; /* Spaces out the products evenly */
+    gap: 20px; /* Creates space between the images */
+    margin: 2em 5%; /* Centers the container */
+    padding: 1em;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.product {
+    background-color: #f7f8f6;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%; /* Each product box takes up 30% of the container width */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    margin-bottom: 20px; /* Space below each product */
+}
+
+.product img {
+    width: 100%; /* Ensure the image stretches within the product box */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 300px; /* Limit the height to fit within the design */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.product h3 {
+    color: #0e0d0d; /* Product title color */
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.product p {
+    color: #333;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+
